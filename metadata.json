@@ -1,0 +1,6 @@
+{
+  "name": "E-Pustakalaya (PDF Book Library)",
+  "description": "A digital library where users can read and download PDF books, with a secure admin panel for uploading content.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

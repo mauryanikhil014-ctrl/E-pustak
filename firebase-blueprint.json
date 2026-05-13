@@ -1,0 +1,24 @@
+{
+  "entities": {
+    "Book": {
+      "title": "Book",
+      "description": "Metadata for a digital book",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string", "description": "The title of the book" },
+        "author": { "type": "string", "description": "The author of the book" },
+        "description": { "type": "string", "description": "A short summary of the book" },
+        "coverUrl": { "type": "string", "description": "URL to the book cover image" },
+        "pdfUrl": { "type": "string", "description": "URL to the PDF file" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "When the book was uploaded" }
+      },
+      "required": ["title", "author", "coverUrl", "pdfUrl"]
+    }
+  },
+  "firestore": {
+    "/books": {
+      "schema": "Book",
+      "description": "A collection of available books"
+    }
+  }
+}
